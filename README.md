@@ -4,7 +4,7 @@ A program that takes as input two directories and:
 
 - finds pairs of matching files by name,
 
-- for each pair, computes checksum for each file, and then compares the checksums for each pair
+- for each pair, computes MD5 checksum for each file, and then compares the checksums for each pair
 
 - reports pairs of files whose checksums do no match
 
