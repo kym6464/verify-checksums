@@ -1,10 +1,10 @@
 # checksum
 
-A program that takes as input two directories and:
+A program that takes as input two paths (directory or file) and:
 
-- finds pairs of matching files by name,
+- matches files by name,
 
-- for each pair, computes MD5 checksum for each file, and then compares the checksums for each pair
+- compares MD5 checksum for each pair of files
 
 - reports pairs of files whose checksums do no match
 

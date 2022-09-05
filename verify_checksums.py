@@ -4,22 +4,22 @@ from pathlib import Path
 from prettytable import PrettyTable
 from tqdm import tqdm
 
-def directory(s: str) -> Path:
+def directory_or_file(s: str) -> Path:
     path = Path(s)
-    if not path.exists() or not path.is_dir():
+    if not path.exists():
         raise ValueError
     return path
 
 parser = argparse.ArgumentParser()
-parser.add_argument('dir1', type=directory)
-parser.add_argument('dir2', type=directory)
+parser.add_argument('path1', type=directory_or_file)
+parser.add_argument('path2', type=directory_or_file)
 args = parser.parse_args()
 
-dir1 = args.dir1
-dir2 = args.dir2
+path1 = args.path1
+path2 = args.path1
 
-files1 = [f for f in dir1.iterdir() if f.is_file()]
-files2 = [f for f in dir2.iterdir() if f.is_file()]
+files1 = [f for f in path1.iterdir() if f.is_file()] if path1.is_dir() else [path1]
+files2 = [f for f in path2.iterdir() if f.is_file()] if path2.is_dir() else [path2]
 
 file_pairs = []
 for f1 in files1:
