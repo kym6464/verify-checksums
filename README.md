@@ -43,7 +43,7 @@ Comparing 2 file pair(s)...
 |   1   | test_data/dir_a | file_b.txt |
 |   1   | test_data/dir_b | file_b.txt |
 +-------+-----------------+------------+
-computing checksums...: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 9592.46it/s]
+computing checksums...: 100%|██████████████| 4/4 [00:00<00:00, 9592.46it/s]
 all file pair checksums match
 
 ```
@@ -65,7 +65,7 @@ Comparing 3 file pair(s)...
 |   2   | test_data/dir_a | file_c.txt |
 |   2   | test_data/dir_d | file_c.txt |
 +-------+-----------------+------------+
-computing checksums...: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 16448.25it/s]
+computing checksums...: 100%|███████████| 6/6 [00:00<00:00, 16448.25it/s]
 Found 2 file pair(s) with mismatched checksums...
 +-------+-----------------+------------+----------------------------------+
 | index |    directory    |    name    |           md5_checksum           |
