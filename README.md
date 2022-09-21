@@ -11,11 +11,12 @@ A program that takes as input two paths (directory or file) and:
 ## usage
 
 ```
-usage: verify_checksums.py [-h] dir1 dir2
+% python verify_checksums.py --help
+usage: verify_checksums.py [-h] path1 path2
 
 positional arguments:
-  dir1
-  dir2
+  path1
+  path2
 
 options:
   -h, --help  show this help message and exit
@@ -32,7 +33,7 @@ pip install -r requirements.txt
 Two equivalent directories:
 
 ```
-%python verify_checksums.py "test_data/dir_a" "test_data/dir_b"
+% python verify_checksums.py "test_data/dir_a" "test_data/dir_b"
 Comparing 2 file pair(s)...
 +-------+-----------------+------------+
 | index |    directory    |    name    |
